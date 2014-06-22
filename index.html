@@ -1,12 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Will Browne | Software Developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Will Browne - Software Developer</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link href="assets/css/timeline.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+    <script type="text/javascript">
+    
+        $(document).ready(function() {
+            $('div[rel]').each(function() {
+                $(this).popover({
+                    placement: 'top',
+                    trigger : 'hover'
+                }).css("cursor", "pointer");  
+            }); 
+        });
+    </script>
   </head>
-  
+
   <body>
-    <p>Under maintenance. Please check back soon</p>
-    <a href="http://www.linkedin.com/in/willbrowne">Check out my LinkedIn</a> 
-    <p>But I just wanna say I love Gabriella!</p>
- </body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Will Browne</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          	<li><a href="#about">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="about">
+	<div id="ww">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered">
+					<img src="assets/img/me.png" width="225px" height="225px" alt="me">
+					<h1>Hi, I am Will!</h1>
+					<p>Hello everybody. I'm Will, a software developer from Ireland. I'm a recent graduate of Trinity College Dublin, where I achieved a Bachelor's and Master's degree in Computer Science. 
+                        I am currently looking for work as a freelance developer. My primary experience comes from working with Dublin startup Bullet and a variety of projects that I worked on in college and in my spare time.</p>
+					<p>You can find my CV <a href="www.dropbox.com">here</a></p>
+				
+				</div><!-- /col-lg-8 -->
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /ww -->
+	</div>
+	
+	<div id="work">
+	<div class="container">
+		<div class="page-header">
+	        <h1 id="previous_work">Previous Work</h1>
+	    </div>
+		<div class="row mt centered">	
+			
+			 <div class="col-lg-6" style="border-right: 1px solid #ded;">
+			 	<div>
+				<a class="zoom green" href="work.html#health"><img style="width:auto;height:auto;" class="img-responsive" src="assets/img/dashboard3.png" alt="" /></a>
+				</div>
+				<div><!-- style="border: 1px solid #ded;" -->
+				<h4>Palliative Care Health Application</h4>
+				<p>A Telemedicine cloud application that provides access to patient records and leverages control over wireless sensor networks using prototype Bluetooth 4.0 &reg; hardware. This project was the focus of my Masters dissertation. I hope to continue to develop and release this product in the future.</p>
+				</div>
+			</div>
+			 <div class="col-lg-6">
+			 	<div>
+			 	<a class="zoom green" href="work.html#bullet"><img style="width:auto;height:auto;" class="img-responsive" src="assets/img/bullet9.png" alt="" /></a>
+				</div>
+				<div>
+				<h4>Bullet</h4>
+				<p>Bullet are a company that provide a range of web applications that aim to help people start and run small businesses. My role in the company was a full stack Java Software Developer role developing customer driven features for Bullet's online accounting software. My most important work was developing their RESTful API and enabling the product's Multi Currency capabilities.</p>
+				</div>
+			</div>
+
+		</div><!-- /row -->
+		 <div class="row mt centered">	
+			<div class="col-lg-4" style="border-right: 1px solid #ded;" >
+				<a class="zoom green" href="work.html#deathrun"><img class="img-responsive" src="assets/img/deathrun3.png" alt="" /></a>
+				<p></p>
+				<p>Original co-op game (currently in Alpha stage) written in C++/OpenGL using the Bullet physics engine.</p>
+			</div>
+			<div class="col-lg-4" style="border-right: 1px solid #ded;">
+				<a class="zoom green" href="work.html#node"><img class="img-responsive" src="assets/img/nodejs.png" alt="" /></a>
+				<p></p>
+				<p>Multiplayer Tic-tac-toe written in HTML5, Node.js and Socket.IO. All client exchanges are encrypted using a combination of RSA and AES cryptography</p>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="work.html#embedded"><img class="img-responsive" src="assets/img/LPC2468.jpg" alt="" /></a>
+				<p></p>
+				<p>Developed various Embedded Systems using an LPC2468 microcontroller with a 16-bit/32-bit ARM7TDMI-S CPU</p>
+			</div>
+		</div><!-- /row -->
+
+		<span class="row mt centered">
+			<h3>For more see my <a href="https://github.com/wbrowne/">GitHub</a></h3>
+		</span>
+
+	</div><!-- /container -->
+	</div>
+
+	<div id="technologies">
+	<div class="container">
+		<div class="page-header">
+	        <h1 id="previous_work">Technologies</h1>
+	    </div>
+		<div class="row mt">
+			<div class="col-lg-6">
+				<h4>SYSTEMS &amp; TOOLS</h4>
+				Linux / OS X
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+						<span class="sr-only">75% Complete</span>
+					</div>
+				</div>
+
+				Windows
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+						<span class="sr-only">80% Complete</span>
+					</div>
+				</div>
+				
+				IntelliJ IDEA
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+
+				Eclipse
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+
+                Latex
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+                
+				Git
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+			           
+			</div>
+            
+			<div class="col-lg-6">
+				<h4>SKILLS</h4>
+				Java (Spring / Hibernate / Maven / JUnit)
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+						<span class="sr-only">75% Complete</span>
+					</div>
+				</div>
+
+				HTML + CSS
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+						<span class="sr-only">80% Complete</span>
+					</div>
+				</div>
+				
+				JavaScript (jQuery / Node.js)
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+                
+                SQL
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+
+				C / C++
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+                
+                Ruby on Rails (currently learning)
+				<div class="progress" rel="popover" data-content="I'm currently building a blog platform in Ruby on Rails 4!">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+						<span class="sr-only">95% Complete</span>
+					</div>
+				</div>
+
+			</div><!-- /col-lg-6 -->
+		</div><!-- /row -->
+	</div>
+	</div>
+
+	<div class="container">
+	    <div class="page-header">
+	        <h1 id="timeline">Experience</h1>
+	    </div>
+	    <ul class="timeline">
+	        <li>
+	          <div class="timeline-badge success"><i class="glyphicon glyphicon-ok"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Trinity College Dublin</h4>
+	              <p>Completed Masters in Computer Science - Achieved Distinction</p>
+	            </div>
+	            <div class="timeline-body">
+	              <p class="green">May 2014</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-ok"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Trinity College Dublin</h4>
+	              <p>Completed BA (Mod) in Computer Science - Achieved First Class Honors</p>
+	            </div>
+	            <div class="timeline-body">
+	              <p class="green">August 2013</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-ok"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Bullet</h4>
+                    <p>Software Developer</p>
+                    <p>College Internship</p>
+	            </div>
+	            <div class="timeline-body">
+	              <p class="green">January 2013 - August 2013</p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge info"><i class="glyphicon glyphicon-ok"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Bullet</h4>
+                    <p>Software Developer</p>
+	                <p>Summer Internship</p>
+	            </div>
+	            <div class="timeline-body">
+	              <p class="green">June 2012 - September 2012</p>
+	            </div>
+	          </div>
+	        </li>
+	    </ul>
+	</div><!-- end container-->
+
+	<div id="contact">
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-6 col-lg-offset-3 centered">
+				<h2>CONTACT ME</h2>
+				<hr>
+				<p>The best way to get in touch is through <a href="mailto:wbrowne@tcd.ie?Subject=Hello!">email!</a></p>
+			</div>
+		</div>
+	</div><!-- /container -->
+	</div>
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>Location</h4>
+					<p>
+						+353 89 483 9579, <br/>
+						Wicklow, Ireland.
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>Social Media</h4>
+                    
+					<ul class="list-inline">
+                        <li><a href="https://github.com/wbrowne/" class="fa fa-github fa-4x"></a></li>
+                        <li><a href="https://twitter.com/_wbrowne_" class="fa fa-twitter fa-4x"></a></li>
+                        <li><a href="http://www.linkedin.com/in/willbrowne" class="fa fa-linkedin fa-4x"></a></li>
+                    </ul>
+				</div><!-- /col-lg-4 -->
+			
+			</div>
+		
+		</div>
+	</div>
+	
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
