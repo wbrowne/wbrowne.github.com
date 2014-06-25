@@ -87,8 +87,10 @@ asymmetric cryptography."<br /><br /></i></blockquote>
 
             <p>The following is a high-level overview of the system architecture:</p>
             <img class="img-responsive center-block" src="assets/img/system.png" alt="" />
-
-
+            <br />
+            <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and Bluetooth Classic modules. <a href="http://redbearlab.com/bleshield/">RedBearLab's BLE shield</a> provides all Bluetooth Low Energy functionality, while the <a href="http://www.connectblue.com/products/wireless-ready-to-embed-modules/bluetooth-dual-mode-serial-port-module-obs421/">ConnectBlue OBS421</a> chip provides Bluetooth Classic. Both chips are integrated using the <a href="http://www.arduino.cc/">Arduino</a> platform (written in C), meaning that both Bluetooth protocols can be used concurrently. Together, this hardware forms the basis for a smart sensor that is capable of transmitting over low and high bit rate streams in parallel. This ensures efficient and </p>
+            <p>The sensor gateway exposes the sensor streams to the cloud by routing the traffic securely and efficiently by communicating both Bluetooth and IP (Internet Protocol). The gateway is designed to function as a Bluetooth Smart Ready mobile phone.</p>
+            <p>The cloud application serves as a platform that provides data access to caregivers while also leveraging control over the patient's remote sensor network. The technology behind the application is industry standard - Java, Spring MVC, Hibernate, Bootstrap 3 to provide a rich, secure, user interface (UI)-centric, and scalable application</p>
 		</div><!-- /row -->
         
         <div id="bullet" class="row mt">	
@@ -137,7 +139,7 @@ asymmetric cryptography."<br /><br /></i></blockquote>
                 embedded systems making use of peripheral modules and devices such as interrupt controllers, serial communication devices, LCD and touchscreen controllers and analogue-to-digital converters. I also did some further work using a real-time operating system (<a href="http://www.freertos.org/">FreeRTOS</a>).
             </p>
             
-            <p>In my spare time I also enjoy hacking around with the <a href="http://www.arduino.cc/">Arduino</a> platform.</p>
+            <p>In my spare time I also enjoy hacking around with the <a href="http://www.arduino.cc/">Arduino</a> platform. By combining both my Dad's interest and my own, we're going to start to work on a quadcopter. I'll make sure to feature it in my <a href="wjbrowne.wordpress.com">blog</a> as I build it.</p>
             
 		</div><!-- /row -->
             
