@@ -136,7 +136,7 @@
                         asymmetric cryptography."<br/><br/></i></blockquote>
 
                     <p>The following is a high-level overview of the system architecture:</p>
-                    <img class="img-responsive center-block" src="assets/img/system2.png" alt=""/>
+                    <img class="img-responsive center-block" src="assets/img/system2.png" alt="Architecture diagram"/>
                     <br/>
 
                     <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and Bluetooth
@@ -146,7 +146,7 @@
                             OBS421</a> chip provides Bluetooth Classic. Both chips are integrated using the <a
                                 href="http://www.arduino.cc/">Arduino</a> platform (written in C), meaning that both Bluetooth
                         protocols can be used concurrently. Together, this hardware forms the basis for a smart sensor that is
-                        capable of transmitting over low and high bit rate streams in parallel. This ensures efficient and </p>
+                        capable of transmitting over low and high bit rate streams in parallel. This ensures efficient and high throughput transmission of patient data.</p>
 
                     <p>The sensor gateway exposes the sensor streams to the cloud by routing the traffic securely and efficiently by
                         communicating both Bluetooth and IP (Internet Protocol). The gateway is designed to function as a Bluetooth
@@ -256,10 +256,11 @@
     </div>
 </div>
 
-<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function ($) {
-        $('#tabs').tab();
+//        $('#tabs').tab();
+        $('#tabs').tabCollapse();
 
         var url = document.location.toString();
         if (url.match('#')) {
@@ -273,9 +274,10 @@
         })
     });
 </script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/hover.zoom.js"></script>
-<script src="assets/js/hover.zoom.conf.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-tabcollapse.js"></script>
+<script type="text/javascript" src="assets/js/hover.zoom.js"></script>
+<script type="text/javascript" src="assets/js/hover.zoom.conf.js"></script>
 
 </body>
 </html>
