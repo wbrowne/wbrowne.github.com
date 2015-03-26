@@ -1,176 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <meta name="description" content="Will Browne Software Developer Portfolio">
+    <meta name="author" content="Will Browne">
 
     <title>Will Browne | Software Developer</title>
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
     <link href="assets/css/main.css" rel="stylesheet">
+</head>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/hover.zoom.js"></script>
-    <script src="assets/js/hover.zoom.conf.js"></script>
-  </head>
+<body>
 
-  <body>
-
-    <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Will Browne</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Will Browne</a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-          	<li><a href="index.html#about">About Me</a></li>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="index.html#technologies">Technologies</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-	
-	
-    <div class="header">
-        <div class="vert-text">
-             
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#work">Work</a></li>
+                <li><a href="index.html#technologies">Technologies</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
-	
-	<div class="container pt">
-		<div class="row mt">
-			<div class="col-lg-6 col-lg-offset-3 centered">
-				<h1>MY WORK</h1>
-				<p>Here's more detail of some of the work I've done. If you want to know more, just <a href="mailto:wbrowne@tcd.ie?Subject=Hello!">get in touch!</a></p>
-			</div>
-		</div>
-        
-        <div id="health" class="row mt">	
-            <div class="page-header">
-	           <h2>Telemedicine application</h2>
-	        </div>
-            
-            <p>The following is taken from the abstract section of my dissertation:</p>
-			<blockquote class="blockquote-reverse"><i>"Telemedicine is an important practice that removes the necessity for physical encounters between patients and physicians. Combined with the capabilities of remote
-monitoring systems, a patient can be monitored using physiological sensors
-which seamlessly gather data. Using an Internet of Things (IoT) model, non-invasive
-physiological sensors that capture a patient's current health status can
-be exposed through a Telemedicine platform. By closely monitoring patient's vital
-signs, physicians can capture a snapshot of a patient's well being. This is an
-important factor in the lives of palliative care patients, where focus is placed on
-quality of life.<br /><br />
-                This dissertation outlines a secure, cloud-enabled Telemedicine solution aimed at
-the field of palliative medicine. This dissertation plans to expose the Bluetooth
-4.0 protocol in order to provide a multi-stream data transmission protocol of low
-and high bit-rate data. Use of an adaptive data stream enables efficient sensor
-traffic with capabilities of complex sensor data transmission in emergency situations
-and low bandwidth data that can provide episodic updates. Each patient
-sensor makes use of a gateway to transmit information to a cloud based service,
-which publishes current and historic data for individual patients. Secure storage,
-access and transmission of patient data is also an important concern. This dissertation
-outlines two security mechanisms using a combination of symmetric and
-asymmetric cryptography."<br /><br /></i></blockquote>
+</div>
 
-            <p>The following is a high-level overview of the system architecture:</p>
-            <img class="img-responsive center-block" src="assets/img/system.png" alt="" />
-            <br />
-            <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and Bluetooth Classic modules. <a href="http://redbearlab.com/bleshield/">RedBearLab's BLE shield</a> provides all Bluetooth Low Energy functionality, while the <a href="http://www.connectblue.com/products/wireless-ready-to-embed-modules/bluetooth-dual-mode-serial-port-module-obs421/">ConnectBlue OBS421</a> chip provides Bluetooth Classic. Both chips are integrated using the <a href="http://www.arduino.cc/">Arduino</a> platform (written in C), meaning that both Bluetooth protocols can be used concurrently. Together, this hardware forms the basis for a smart sensor that is capable of transmitting over low and high bit rate streams in parallel. This ensures efficient and </p>
-            <p>The sensor gateway exposes the sensor streams to the cloud by routing the traffic securely and efficiently by communicating both Bluetooth and IP (Internet Protocol). The gateway is designed to function as a Bluetooth Smart Ready mobile phone.</p>
-            <p>The cloud application serves as a platform that provides data access to caregivers while also leveraging control over the patient's remote sensor network. The technology behind the application is industry standard - Java, Spring MVC, Hibernate, Bootstrap 3 to provide a rich, secure, user interface (UI)-centric, and scalable application</p>
-		</div><!-- /row -->
-        
-        <div id="bullet" class="row mt">	
-            <div class="page-header">
-	           <h2>Bullet</h2>
-	        </div>
-            <p>With a combined total of 10 months working at <a href="http://www.bullethq.com/">Bullet</a>, I worked on many different parts of the Bullet Accounts product. For instance, in order to integrate with Adverts.ie so that Bullet could be manage the Adverts store account, I designed and implemented a RESTful API for the Bullet Accounts product. Another feature I developed was Bank Reconciliation. Bank Reconciliation is the process of automatically reconciling all matching transactions in the two bank accounts. The feature allows a user to upload a bank statement and the system applies matching rules to each transaction so that they can be reconciled with the information in Bullet. </p>
-			
-            <p>Here's a screenshot taken from Bullet's transaction reconciliation process:</p>
-            <img class="img-responsive center-block" src="assets/img/rec3.png" alt="" />
-            
-		</div><!-- /row -->
-        
-		<div id="deathrun" class="row mt">	
-            <div class="page-header">
-	           <h2>DeathRun</h2>
-	        </div>
-            <p>Death run is a multiplayer split screen game where players have to race each other to the top of the slope whilst trying to avoid multiple different oncoming objects. The first player to reach the top of the platform wins the game. I got inspiration for this game from the <a href="http://www.moddb.com/mods/zombie-master">Zombie Master mod</a> for Half Life 2. The following is an in-game shot:</p>
-            
-        <p>
-            <img class="img-responsive center-block" src="assets/img/in_game.png" alt="" />
-        </p>     
-       
-                
-            <p>In the future I hope to work on adding a third player, whose role will be to manually control the obstacles in order to prevent the other players from reaching the top. I also plan to port the project to OpenGL ES so that the game can run on mobile devices.</p>
-            
-		</div><!-- /row -->
-        
-		<div id="node" class="row mt">	
-            <div class="page-header">
-	           <h2>HTML5 Cypto Tic Tac Toe</h2>
-	        </div>
-            <p>I developed this game for one of the assignments in an Advanted Telecommunications course I took in third year of university. Having done a <a href="http://www.github.com/wbrowne/HTML5-Minesweeper">HTML5 minesweeper game</a> using the canvas a few months previously, I decided to go a bit further by integrating with NodeJS</p>
-			
-            <p>
-                <img class="img-responsive center-block" src="assets/img/tic_tac_toe2.png" alt="" />
-            </p>
-        </div><!-- /row -->
-        
-        <div id="embedded" class="row mt">	
-            <div class="page-header">
-	           <h2>Embedded Systems programming</h2>
-	        </div>
-            		
-            <p>During my masters I worked with the LPC2468 microcontroller developing various small-scale 
-                embedded systems making use of peripheral modules and devices such as interrupt controllers, serial communication devices, LCD and touchscreen controllers and analogue-to-digital converters. I also did some further work using a real-time operating system (<a href="http://www.freertos.org/">FreeRTOS</a>).
-            </p>
-            
-            <p>In my spare time I also enjoy hacking around with the <a href="http://www.arduino.cc/">Arduino</a> platform. By combining both my Dad's interest and my own, we're going to start to work on a quadcopter. I'll make sure to feature it in my <a href="wjbrowne.wordpress.com">blog</a> as I build it.</p>
-            
-		</div><!-- /row -->
-            
-	</div><!-- /container -->
-	
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h4>Location</h4>
-					<p>
-						+353 89 483 9579, <br/>
-						Wicklow, Ireland.
-					</p>
-				</div><!-- /col-lg-4 -->
-				
-				<div class="col-lg-4">
-					<h4>Social Media</h4>
-                    
-					<ul class="list-inline">
-                        <li><a href="https://github.com/wbrowne/" class="fa fa-github fa-4x"></a></li>
-                        <li><a href="https://twitter.com/_wbrowne_" class="fa fa-twitter fa-4x"></a></li>
-                        <li><a href="http://www.linkedin.com/in/willbrowne" class="fa fa-linkedin fa-4x"></a></li>
-                    </ul>
-				</div><!-- /col-lg-4 -->
-			
-			</div>
-		
-		</div>
-	</div>
-	
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+<div class="header">
+    <div class="vert-text">
+
+    </div>
+</div>
+
+<div class="container pt">
+    <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+            <h1>MY WORK</h1>
+
+            <p>Here's more detail of some of the work I've done. If you want to know more, just <a
+                    href="mailto:wbrowne.ca@gmail.com?Subject=Hello!">get in touch!</a></p>
+        </div>
+    </div>
+
+    <div id="content">
+        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#mtt" data-toggle="tab">Mobile Travel Technologies</a></li>
+            <li><a href="#movieApp" data-toggle="tab">TellMeWhatToWatch</a></li>
+            <li><a href="#dissertation" data-toggle="tab">Telemedicine Application</a></li>
+            <li><a href="#bullet" data-toggle="tab">Bullet</a></li>
+            <li><a href="#deathrun" data-toggle="tab">Death Run</a></li>
+            <li><a href="#tictactoe" data-toggle="tab">Tic Tac Toe</a></li>
+            <li><a href="#embedded" data-toggle="tab">Embedded Systems</a></li>
+        </ul>
+        <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane active" id="mtt">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>Mobile Travel Technologies (MTT)</h2>
+                    </div>
+
+                    <div class="centered">
+                        <img src="http://info.itshappeninghere.ie/wp-content/uploads/2012/08/MTT-Logo-Blue-220x220.png" alt="MTT logo">
+                    </div>
+                    <p>MTT are a software company that specialize in mobile apps, mobile web and mobile technology products for airlines, travel management companies, OTAs and hotels. To name a few of their customers: EasyJet, Saudia Airlines, Singapore Airlines, BCD, and LATAM.</p>
+
+
+                    <h4>Concierge Live</h4>
+
+                    <p><i>MTT Concierge Live is a real-time mobile travel assistant that obtains a passenger's relevant trip
+                        information
+                        in order to provide guidance through every step of the journey. Concierge Live exists as a software widget
+                        that is embedded within your existing mobile application.</i></p>
+
+                    <p>For more information please see MTT's press release on the <a href="http://mttnow.com/mtt-concierge">Concierge
+                        Live product</a>.</p>
+
+                    <h4>Automation Deployment</h4>
+
+                    <p>Through Ansible</p>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="movieApp">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>TellMeWhatToWatch (name is a work in progress)</h2>
+                    </div>
+
+                    <img class="img-responsive center-block" src="assets/img/movie.jpg" alt=""/>
+
+                    <p>TellMeWhatToWatch is a social mobile platform for friends to recommend
+                        viewing content to each other in real time.</p>
+
+                    <p>Looking for something to watch? Something funny or something specific like a movie with ‎Bob Odenkirk released before the year 2000? Hit up your group of friends and see that they can find or what they recommend. You can accept a recommendation, giving that friend a new point. Or you could just skip all that and we'll use our own smarts to find something for you. </p>
+                    <p>Currently in development for the Android platform.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="dissertation">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>Dissertation Telemedicine application</h2>
+                    </div>
+
+                    <p>The following is taken from the abstract section of my dissertation:</p>
+                    <blockquote class="blockquote-reverse"><i>"Telemedicine is an important practice that removes the necessity for
+                        physical encounters between patients and physicians. Combined with the capabilities of remote
+                        monitoring systems, a patient can be monitored using physiological sensors
+                        which seamlessly gather data. Using an Internet of Things (IoT) model, non-invasive
+                        physiological sensors that capture a patient's current health status can
+                        be exposed through a Telemedicine platform. By closely monitoring patient's vital
+                        signs, physicians can capture a snapshot of a patient's well being. This is an
+                        important factor in the lives of palliative care patients, where focus is placed on
+                        quality of life.<br/><br/>
+                        This dissertation outlines a secure, cloud-enabled Telemedicine solution aimed at
+                        the field of palliative medicine. This dissertation plans to expose the Bluetooth
+                        4.0 protocol in order to provide a multi-stream data transmission protocol of low
+                        and high bit-rate data. Use of an adaptive data stream enables efficient sensor
+                        traffic with capabilities of complex sensor data transmission in emergency situations
+                        and low bandwidth data that can provide episodic updates. Each patient
+                        sensor makes use of a gateway to transmit information to a cloud based service,
+                        which publishes current and historic data for individual patients. Secure storage,
+                        access and transmission of patient data is also an important concern. This dissertation
+                        outlines two security mechanisms using a combination of symmetric and
+                        asymmetric cryptography."<br/><br/></i></blockquote>
+
+                    <p>The following is a high-level overview of the system architecture:</p>
+                    <img class="img-responsive center-block" src="assets/img/system2.png" alt=""/>
+                    <br/>
+
+                    <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and Bluetooth
+                        Classic modules. <a href="http://redbearlab.com/bleshield/">RedBearLab's BLE shield</a> provides all
+                        Bluetooth Low Energy functionality, while the <a
+                                href="http://www.connectblue.com/products/wireless-ready-to-embed-modules/bluetooth-dual-mode-serial-port-module-obs421/">ConnectBlue
+                            OBS421</a> chip provides Bluetooth Classic. Both chips are integrated using the <a
+                                href="http://www.arduino.cc/">Arduino</a> platform (written in C), meaning that both Bluetooth
+                        protocols can be used concurrently. Together, this hardware forms the basis for a smart sensor that is
+                        capable of transmitting over low and high bit rate streams in parallel. This ensures efficient and </p>
+
+                    <p>The sensor gateway exposes the sensor streams to the cloud by routing the traffic securely and efficiently by
+                        communicating both Bluetooth and IP (Internet Protocol). The gateway is designed to function as a Bluetooth
+                        Smart Ready mobile phone.</p>
+
+                    <p>The cloud application serves as a platform that provides data access to caregivers while also leveraging
+                        control over the patient's remote sensor network. The technology behind the application is industry standard
+                        - Java, Spring MVC, Hibernate, Bootstrap 3 to provide a rich, secure, user interface (UI)-centric, and
+                        scalable application</p>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="bullet">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>Bullet</h2>
+                    </div>
+                    <p>With a combined total of 10 months working at <a href="http://www.bullethq.com/">Bullet</a>, I worked on many
+                        different parts of the Bullet Accounts product. For instance, in order to integrate with Adverts.ie so that
+                        Bullet could be manage the Adverts store account, I designed and implemented a RESTful API for the Bullet
+                        Accounts product. Another feature I developed was Bank Reconciliation. Bank Reconciliation is the process of
+                        automatically reconciling all matching transactions in the two bank accounts. The feature allows a user to
+                        upload a bank statement and the system applies matching rules to each transaction so that they can be
+                        reconciled with the information in Bullet. </p>
+
+                    <p>Here's a screenshot taken from Bullet's transaction reconciliation process:</p>
+                    <img class="img-responsive center-block" src="assets/img/rec3.png" alt=""/>
+                </div>
+            </div>
+            <div class="tab-pane" id="deathrun">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>DeathRun</h2>
+                    </div>
+                    <p>Death run is a multiplayer split screen game where players have to race each other to the top of the slope
+                        whilst trying to avoid multiple different oncoming objects. The first player to reach the top of the
+                        platform wins the game. I got inspiration for this game from the <a
+                                href="http://www.moddb.com/mods/zombie-master">Zombie Master mod</a> for Half Life 2. The following
+                        is an in-game shot:</p>
+
+                    <p>
+                        <img class="img-responsive center-block" src="assets/img/in_game.png" alt=""/>
+                    </p>
+
+                    <p>In the future I hope to work on adding a third player, whose role will be to manually control the obstacles
+                        in order to prevent the other players from reaching the top. I also plan to port the project to OpenGL ES so
+                        that the game can run on mobile devices.</p>
+                </div>
+            </div>
+            <div class="tab-pane" id="tictactoe">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>HTML5 Cypto Tic Tac Toe</h2>
+                    </div>
+                    <p>I developed this game for one of the assignments in an Advanted Telecommunications course I took in third
+                        year of university. Having done a <a href="http://www.github.com/wbrowne/HTML5-Minesweeper">HTML5
+                            minesweeper game</a> using the canvas a few months previously, I decided to go a bit further by
+                        integrating with NodeJS</p>
+
+                    <p>
+                        <img class="img-responsive center-block" src="assets/img/tic_tac_toe2.png" alt=""/>
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane" id="embedded">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>Embedded Systems programming</h2>
+                    </div>
+
+                    <p>During my masters I worked with the LPC2468 microcontroller developing various small-scale
+                        embedded systems making use of peripheral modules and devices such as interrupt controllers, serial
+                        communication devices, LCD and touchscreen controllers and analogue-to-digital converters. I also did some
+                        further work using a real-time operating system (<a href="http://www.freertos.org/">FreeRTOS</a>).
+                    </p>
+
+                    <p>In my spare time I also enjoy hacking around with the <a href="http://www.arduino.cc/">Arduino</a> platform.
+                        By combining both my Dad's interest and my own, we're going to start to work on a quadcopter. I'll make sure
+                        to feature it in my <a href="http://wjbrowne.wordpress.com">blog</a> as I build it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Location</h4>
+
+                <p>
+                    Toronto, Canada.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Social Media</h4>
+
+                <ul class="list-inline">
+                    <li><a href="https://github.com/wbrowne?tab=repositories" class="fa fa-github fa-4x"></a></li>
+                    <li><a href="https://twitter.com/_wbrowne_" class="fa fa-twitter fa-4x"></a></li>
+                    <li><a href="http://www.linkedin.com/in/willbrowne" class="fa fa-linkedin fa-4x"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        $('#tabs').tab();
+
+        var url = document.location.toString();
+        if (url.match('#')) {
+            $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+        }
+
+        // Change hash for page-reload
+        $('.nav-tabs a').on('shown', function (e) {
+            window.location.hash = e.target.hash;
+//            window.scrollTo(0, 0);
+        })
+    });
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/hover.zoom.js"></script>
+<script src="assets/js/hover.zoom.conf.js"></script>
+
+</body>
 </html>

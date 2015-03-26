@@ -116,6 +116,10 @@ a:after {
 	letter-spacing: 2px;
 }
 
+.navbar-brand:hover {
+    font-size: 21px;
+}
+
 .navbar-inverse .navbar-brand {
 	color: white;
 }
@@ -232,7 +236,7 @@ a:after {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/stock2.jpg) no-repeat center center fixed;
+  background: url(../img/work.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
