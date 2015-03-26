@@ -39,8 +39,6 @@ h1 {
 	margin-bottom: 30px;
 }
 
-
-
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
@@ -88,7 +86,6 @@ a:after {
     margin: 1em 0;
     padding: 0;
 }
-
 
 .navbar {
 	text-transform: uppercase;
@@ -147,7 +144,6 @@ a:after {
 	padding-bottom: 50px;
 }
 
-
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {
@@ -156,11 +152,10 @@ a:after {
 	background-color: #f2f2f2;
 }
 
-
 #footer {
 	background-color: #2f2f2f;
 	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 }
 
 #footer p {
@@ -188,52 +183,26 @@ a:after {
 	background-color: #ffffff;
 }
 
-
-
-/* Blog Date*/
-bd {
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #d2d2d2;
-	font-weight: 700;
-}
-
-/* Blog Author*/
-ba {
-	font-size: 12px;
-	text-transform: uppercase;
-}
-
-/* Blog Quote */
 .bq {
 	font-size: 22px;
 	padding-top: 30px;
 }
 
-/* Blog Tags */
-bt {
-	font-size: 12px;
-}
-
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 /* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
+.zoom {
+    display:block;
+    position:relative;
+    overflow:hidden;
     background:transparent url(../img/loader.gif) no-repeat center;
 }
 
-
-    .zoomOverlay {
-        position:absolute;
-        top:0; left:0;
-        bottom:0; right:0;
-        display:none;
-        background-image:url(../img/zoom.png);
-        background-repeat:no-repeat;
-        background-position:center;
-    }
+.zoomOverlay {
+    position:absolute;
+    top:0; left:0;
+    bottom:0; right:0;
+    display:none;
+    background: url(../img/zoom.png) no-repeat center;
+}
 
 .zoom2 {
 	opacity: 1;
@@ -242,15 +211,6 @@ bt {
 .zoom2:hover {
 	opacity: 0.5;
 }
-
-/* glyphicon Configuration */
-
-/*.glyphicon {
-	font-size: 40px;
-	color: #1abc9c;
-}*/
-
-/* Global Styles */
 
 .vert-text {
   display: table-cell;
@@ -272,7 +232,7 @@ bt {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/stock2.jpg) no-repeat center center fixed; 
+  background: url(../img/stock2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
