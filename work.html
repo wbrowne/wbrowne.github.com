@@ -68,27 +68,43 @@
                 <div class="row mt">
                     <div class="page-header">
                         <h2>Mobile Travel Technologies (MTT)</h2>
+                        <img src="http://info.itshappeninghere.ie/wp-content/uploads/2012/08/MTT-Logo-Blue-220x220.png"
+                             alt="MTT logo" align="right">
                     </div>
 
-                    <div class="centered">
-                        <img src="http://info.itshappeninghere.ie/wp-content/uploads/2012/08/MTT-Logo-Blue-220x220.png" alt="MTT logo">
-                    </div>
-                    <p>MTT are a software company that specialize in mobile apps, mobile web and mobile technology products for airlines, travel management companies, OTAs and hotels. To name a few of their customers: EasyJet, Saudia Airlines, Singapore Airlines, BCD, and LATAM.</p>
-
+                    <p>MTT are a software company that specialize in mobile apps, mobile web and mobile technology
+                        products for airlines, travel management companies, OTAs and hotels. They have customers such as: EasyJet, Saudia Airlines, Singapore Airlines, BCD, and LATAM.</p>
 
                     <h4>Concierge Live</h4>
 
-                    <p><i>MTT Concierge Live is a real-time mobile travel assistant that obtains a passenger's relevant trip
+                    <p><i>MTT Concierge Live is a real-time mobile travel assistant that obtains a passenger's relevant
+                        trip
                         information
-                        in order to provide guidance through every step of the journey. Concierge Live exists as a software widget
+                        in order to provide guidance through every step of the journey. Concierge Live exists as a
+                        software widget
                         that is embedded within your existing mobile application.</i></p>
 
-                    <p>For more information please see MTT's press release on the <a href="http://mttnow.com/mtt-concierge">Concierge
+                    <p>For more information please see MTT's press release on the <a
+                            href="http://mttnow.com/mtt-concierge">Concierge
                         Live product</a>.</p>
 
-                    <h4>Automation Deployment</h4>
+                    <h4>Automation Deployment (Ansible)</h4>
+                    Ansible is an automation platform used to provide provisioning, deployment and configuration
+                    management capabilities. Ansible provides in functionality through scripts called playbooks.
+                    In Ansible speak, a playbook is a list of plays where each play must contain:
 
-                    <p>Through Ansible</p>
+                    <ul>
+                        <li>A set of hosts (remote server instances) to configure</li>
+                        <li>An ordered list of tasks to be executed on those hosts</li>
+                    </ul>
+
+                    As part of MTT my role at MTT I used Ansible to:
+                    <ul>
+                        <li>Provision AWS instances</li>
+                        <li>Deploy products and components to the new instances</li>
+                        <li>Setup a broker, AWS elbs and a DNS</li>
+                        <li>Terminate environments</li>
+                    </ul>
                 </div>
 
             </div>
@@ -103,8 +119,12 @@
                     <p>TellMeWhatToWatch is a social mobile platform for friends to recommend
                         viewing content to each other in real time.</p>
 
-                    <p>Looking for something to watch? Something funny or something specific like a movie with ‎Bob Odenkirk released before the year 2000? Hit up your group of friends and see that they can find or what they recommend. You can accept a recommendation, giving that friend a new point. Or you could just skip all that and we'll use our own smarts to find something for you. </p>
-                    <p>Currently in development for the Android platform.</p>
+                    <p>Looking for something to watch? Something funny or something specific like a movie starring ‎Bob
+                        Odenkirk released before the year 2000 with a rating of at least 4 stars? Hit up your group of friends and see that they can find
+                        or what they recommend. You can accept a recommendation, awarding that friend a new point. Or you
+                        could just skip all that and we'll use our own smarts to find something for you.</p>
+
+                    <p>TellMeWhatToWatch is currently in early development for the Android platform.</p>
                 </div>
             </div>
             <div class="tab-pane" id="dissertation">
@@ -114,7 +134,8 @@
                     </div>
 
                     <p>The following is taken from the abstract section of my dissertation:</p>
-                    <blockquote class="blockquote-reverse"><i>"Telemedicine is an important practice that removes the necessity for
+                    <blockquote class="blockquote-reverse"><i>"Telemedicine is an important practice that removes the
+                        necessity for
                         physical encounters between patients and physicians. Combined with the capabilities of remote
                         monitoring systems, a patient can be monitored using physiological sensors
                         which seamlessly gather data. Using an Internet of Things (IoT) model, non-invasive
@@ -139,23 +160,33 @@
                     <img class="img-responsive center-block" src="assets/img/system2.png" alt="Architecture diagram"/>
                     <br/>
 
-                    <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and Bluetooth
-                        Classic modules. <a href="http://redbearlab.com/bleshield/">RedBearLab's BLE shield</a> provides all
+                    <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and
+                        Bluetooth
+                        Classic modules. <a href="http://redbearlab.com/bleshield/">RedBearLab's BLE shield</a> provides
+                        all
                         Bluetooth Low Energy functionality, while the <a
                                 href="http://www.connectblue.com/products/wireless-ready-to-embed-modules/bluetooth-dual-mode-serial-port-module-obs421/">ConnectBlue
                             OBS421</a> chip provides Bluetooth Classic. Both chips are integrated using the <a
-                                href="http://www.arduino.cc/">Arduino</a> platform (written in C), meaning that both Bluetooth
-                        protocols can be used concurrently. Together, this hardware forms the basis for a smart sensor that is
-                        capable of transmitting over low and high bit rate streams in parallel. This ensures efficient and high throughput transmission of patient data.</p>
+                                href="http://www.arduino.cc/">Arduino</a> platform (written in C), meaning that both
+                        Bluetooth
+                        protocols can be used concurrently. Together, this hardware forms the basis for a smart sensor
+                        that is
+                        capable of transmitting over low and high bit rate streams in parallel. This ensures efficient
+                        and high throughput transmission of patient data.</p>
 
-                    <p>The sensor gateway exposes the sensor streams to the cloud by routing the traffic securely and efficiently by
-                        communicating both Bluetooth and IP (Internet Protocol). The gateway is designed to function as a Bluetooth
+                    <p>The sensor gateway exposes the sensor streams to the cloud by routing the traffic securely and
+                        efficiently by
+                        communicating both Bluetooth and IP (Internet Protocol). The gateway is designed to function as
+                        a Bluetooth
                         Smart Ready mobile phone.</p>
 
-                    <p>The cloud application serves as a platform that provides data access to caregivers while also leveraging
-                        control over the patient's remote sensor network. The technology behind the application is industry standard
-                        - Java, Spring MVC, Hibernate, Bootstrap 3 to provide a rich, secure, user interface (UI)-centric, and
-                        scalable application</p>
+                    <p>The cloud application serves as a platform that provides data access to caregivers while also
+                        leveraging
+                        control over the patient's remote sensor network. The technology behind the application is
+                        industry standard
+                        - Java, Spring MVC, Hibernate, Bootstrap 3 to provide a rich, secure, user interface
+                        (UI)-centric, and
+                        scalable application.</p>
                 </div>
 
             </div>
@@ -164,13 +195,18 @@
                     <div class="page-header">
                         <h2>Bullet</h2>
                     </div>
-                    <p>With a combined total of 10 months working at <a href="http://www.bullethq.com/">Bullet</a>, I worked on many
-                        different parts of the Bullet Accounts product. For instance, in order to integrate with Adverts.ie so that
-                        Bullet could be manage the Adverts store account, I designed and implemented a RESTful API for the Bullet
-                        Accounts product. Another feature I developed was Bank Reconciliation. Bank Reconciliation is the process of
-                        automatically reconciling all matching transactions in the two bank accounts. The feature allows a user to
-                        upload a bank statement and the system applies matching rules to each transaction so that they can be
-                        reconciled with the information in Bullet. </p>
+                    <p>With a combined total of 10 months at <a href="http://www.bullethq.com/">Bullet</a>, I
+                        worked on many
+                        different parts of the Bullet Accounts product. As such a small startup at the time, I worked closely with the CTO and was given a lot of responsibility.</p>
+
+                        <p>In order to integrate with one of Ireland's largest online marketplaces
+                        <a href="http://www.adverts.ie">Adverts.ie</a>, I designed and implemented a RESTful API for
+                        the Bullet
+                        Accounts product. Another feature I developed was Bank Reconciliation (the process of
+                        confirming the bank balance as shown in one's bank balancing statement and the corresponding amount in an organisation's own accounting records). The feature allows
+                        a user to
+                        upload a bank statement and the feature applies matching rules to each transaction so that they
+                        can be reconciled with the information in Bullet. </p>
 
                     <p>Here's a screenshot taken from Bullet's transaction reconciliation process:</p>
                     <img class="img-responsive center-block" src="assets/img/rec3.png" alt=""/>
@@ -181,18 +217,23 @@
                     <div class="page-header">
                         <h2>DeathRun</h2>
                     </div>
-                    <p>Death run is a multiplayer split screen game where players have to race each other to the top of the slope
-                        whilst trying to avoid multiple different oncoming objects. The first player to reach the top of the
+                    <p>Death run is a multiplayer split screen game where players have to race each other to the top of
+                        the slope
+                        whilst trying to avoid multiple different oncoming objects. The first player to reach the top of
+                        the
                         platform wins the game. I got inspiration for this game from the <a
-                                href="http://www.moddb.com/mods/zombie-master">Zombie Master mod</a> for Half Life 2. The following
+                                href="http://www.moddb.com/mods/zombie-master">Zombie Master mod</a> for Half Life 2.
+                        The following
                         is an in-game shot:</p>
 
                     <p>
                         <img class="img-responsive center-block" src="assets/img/in_game.png" alt=""/>
                     </p>
 
-                    <p>In the future I hope to work on adding a third player, whose role will be to manually control the obstacles
-                        in order to prevent the other players from reaching the top. I also plan to port the project to OpenGL ES so
+                    <p>In the future I hope to work on adding a third player, whose role will be to manually control the
+                        obstacles
+                        in order to prevent the other players from reaching the top. I also plan to port the project to
+                        OpenGL ES so
                         that the game can run on mobile devices.</p>
                 </div>
             </div>
@@ -201,9 +242,11 @@
                     <div class="page-header">
                         <h2>HTML5 Cypto Tic Tac Toe</h2>
                     </div>
-                    <p>I developed this game for one of the assignments in an Advanted Telecommunications course I took in third
+                    <p>I developed this game for one of the assignments in an Advanted Telecommunications course I took
+                        in third
                         year of university. Having done a <a href="http://www.github.com/wbrowne/HTML5-Minesweeper">HTML5
-                            minesweeper game</a> using the canvas a few months previously, I decided to go a bit further by
+                            minesweeper game</a> using the canvas a few months previously, I decided to go a bit further
+                        by
                         integrating with NodeJS</p>
 
                     <p>
@@ -217,15 +260,19 @@
                         <h2>Embedded Systems programming</h2>
                     </div>
 
-                    <p>During my masters I worked with the LPC2468 microcontroller developing various small-scale
-                        embedded systems making use of peripheral modules and devices such as interrupt controllers, serial
-                        communication devices, LCD and touchscreen controllers and analogue-to-digital converters. I also did some
+                    <p>During my masters I worked with the LPC2468 microcontroller developing <a href="https://github.com/wbrowne/Embedded-Systems">various small-scale
+                        embedded systems</a> making use of peripheral modules and devices such as interrupt controllers,
+                        serial
+                        communication devices, LCD and touchscreen controllers and analogue-to-digital converters. I
+                        also did some
                         further work using a real-time operating system (<a href="http://www.freertos.org/">FreeRTOS</a>).
                     </p>
 
-                    <p>In my spare time I also enjoy hacking around with the <a href="http://www.arduino.cc/">Arduino</a> platform.
-                        By combining both my Dad's interest and my own, we're going to start to work on a quadcopter. I'll make sure
-                        to feature it in my <a href="http://wjbrowne.wordpress.com">blog</a> as I build it.</p>
+                    <p>In my spare time I also enjoy hacking around with the <a
+                            href="http://www.arduino.cc/">Arduino</a> platform.
+                        Because of multiple break-ins around my street I decided to start building a small security
+                        surveillance system. I'll be sure to track the progress I make in my <a
+                                href="http://wjbrowne.wordpress.com">blog</a> as I build it.</p>
                 </div>
             </div>
         </div>
@@ -259,18 +306,16 @@
 <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function ($) {
-//        $('#tabs').tab();
         $('#tabs').tabCollapse();
 
         var url = document.location.toString();
         if (url.match('#')) {
-            $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+            $('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
         }
 
         // Change hash for page-reload
         $('.nav-tabs a').on('shown', function (e) {
             window.location.hash = e.target.hash;
-//            window.scrollTo(0, 0);
         })
     });
 </script>
