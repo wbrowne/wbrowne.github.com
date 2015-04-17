@@ -9,8 +9,8 @@
 
     <title>Will Browne | Software Developer</title>
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
@@ -68,43 +68,55 @@
                 <div class="row mt">
                     <div class="page-header">
                         <h2>Mobile Travel Technologies (MTT)</h2>
-                        <img src="http://info.itshappeninghere.ie/wp-content/uploads/2012/08/MTT-Logo-Blue-220x220.png"
-                             alt="MTT logo" align="right">
+                        <img class="right-align" src="assets/img/mtt_logo.png"
+                             alt="MTT logo" >
                     </div>
 
                     <p>MTT are a software company that specialize in mobile apps, mobile web and mobile technology
-                        products for airlines, travel management companies, OTAs and hotels. They have customers such as: EasyJet, Saudia Airlines, Singapore Airlines, BCD, and LATAM.</p>
+                        products for airlines, travel management companies, OTAs and hotels. They have customers such
+                        as: EasyJet, Saudia Airlines, Singapore Airlines, BCD, and LATAM.</p>
 
                     <h4>Concierge Live</h4>
 
-                    <p><i>MTT Concierge Live is a real-time mobile travel assistant that obtains a passenger's relevant
+                    <p>MTT Concierge Live is a real-time mobile travel assistant that obtains a passenger's relevant
                         trip
                         information
                         in order to provide guidance through every step of the journey. Concierge Live exists as a
                         software widget
-                        that is embedded within your existing mobile application.</i></p>
+                        that is embedded within your existing mobile application.</p>
 
-                    <p>For more information please see MTT's press release on the <a
+                    <p>As part of a small scrum product team, I assumed role as server side developer for the pilot of the Concierge Live Product.
+                        Being part of MTT's product team meant that the components and services that we built had to be very
+                        robust and maintainable. This meant that code reviews, architecture/design sessions, and pairing played a large role in our development processes.
+                        My main responsibility for Concierge Live was building, configuring and maintaining Spring Boot web services.
+                        Some of the main technologies used were Groovy, Spring Boot, Cucumber, Thymeleaf and MongoDB.</p>
+
+                    <p>For more information on the product itself, please see MTT's press release on the <a
                             href="http://mttnow.com/mtt-concierge">Concierge
                         Live product</a>.</p>
 
-                    <h4>Automation Deployment (Ansible)</h4>
-                    Ansible is an automation platform used to provide provisioning, deployment and configuration
-                    management capabilities. Ansible provides in functionality through scripts called playbooks.
-                    In Ansible speak, a playbook is a list of plays where each play must contain:
+                    <div style="font-size: 16px">
+                        <h4>Automation Deployment (Ansible)</h4>
 
-                    <ul>
-                        <li>A set of hosts (remote server instances) to configure</li>
-                        <li>An ordered list of tasks to be executed on those hosts</li>
-                    </ul>
+                        <p><a href="http://www.ansible.com">Ansible</a> is an automation platform used to provide provisioning,
+                            deployment and configuration
+                            management capabilities. Ansible provides functionality through scripts called <i>playbooks</i>.
+                        </p>
+                        In Ansible terms, a playbook is a list of <i>plays</i> where each <i>play</i> must contain:
 
-                    As part of MTT my role at MTT I used Ansible to:
-                    <ul>
-                        <li>Provision AWS instances</li>
-                        <li>Deploy products and components to the new instances</li>
-                        <li>Setup a broker, AWS elbs and a DNS</li>
-                        <li>Terminate environments</li>
-                    </ul>
+                        <ul>
+                            <li>A set of hosts (remote server instances) to configure</li>
+                            <li>An ordered list of tasks to be executed on those hosts</li>
+                        </ul>
+
+                        As part of MTT my role at MTT I used Ansible to:
+                        <ul>
+                            <li>Provision AWS instances</li>
+                            <li>Deploy products and components to the new instances</li>
+                            <li>Setup a broker, AWS elbs and a DNS</li>
+                            <li>Terminate environments</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -114,14 +126,17 @@
                         <h2>TellMeWhatToWatch (name is a work in progress)</h2>
                     </div>
 
-                    <img class="img-responsive center-block" src="assets/img/movie.jpg" alt=""/>
+                    <img class="img-responsive center-block" src="assets/img/movie.jpg" alt="TellMeWhatToWatch"/>
 
                     <p>TellMeWhatToWatch is a social mobile platform for friends to recommend
                         viewing content to each other in real time.</p>
 
-                    <p>Looking for something to watch? Something funny or something specific like a movie starring ‎Bob
-                        Odenkirk released before the year 2000 with a rating of at least 4 stars? Hit up your group of friends and see that they can find
-                        or what they recommend. You can accept a recommendation, awarding that friend a new point. Or you
+                    <p>Looking for something to watch? Something funny or something specific such as a movie starring ‎Bob
+                        Odenkirk released before the year 2000 with a rating of at least 4 stars?</p>
+                    <p>Hit up your group of
+                        friends and see that they can find
+                        or what they recommend. You can accept a recommendation, awarding that friend a new point. Or
+                        you
                         could just skip all that and we'll use our own smarts to find something for you.</p>
 
                     <p>TellMeWhatToWatch is currently in early development for the Android platform.</p>
@@ -134,7 +149,7 @@
                     </div>
 
                     <p>The following is taken from the abstract section of my dissertation:</p>
-                    <blockquote class="blockquote-reverse"><i>"Telemedicine is an important practice that removes the
+                    <blockquote ><i>"Telemedicine is an important practice that removes the
                         necessity for
                         physical encounters between patients and physicians. Combined with the capabilities of remote
                         monitoring systems, a patient can be monitored using physiological sensors
@@ -157,7 +172,8 @@
                         asymmetric cryptography."<br/><br/></i></blockquote>
 
                     <p>The following is a high-level overview of the system architecture:</p>
-                    <img class="img-responsive center-block" src="assets/img/system2.png" alt="Architecture diagram"/>
+                    <img class="img-responsive center-block" src="assets/img/telemed_arch.png"
+                         alt="Architecture diagram"/>
                     <br/>
 
                     <p>The prototype Bluetooth hardware is designed using a combination of Bluetooth Low Energy and
@@ -197,19 +213,22 @@
                     </div>
                     <p>With a combined total of 10 months at <a href="http://www.bullethq.com/">Bullet</a>, I
                         worked on many
-                        different parts of the Bullet Accounts product. As such a small startup at the time, I worked closely with the CTO and was given a lot of responsibility.</p>
+                        different parts of the Bullet Accounts product. As such a small startup at the time, I worked
+                        closely with the CTO and was given a lot of responsibility.</p>
 
-                        <p>In order to integrate with one of Ireland's largest online marketplaces
+                    <p>In order to integrate with one of Ireland's largest online marketplaces
                         <a href="http://www.adverts.ie">Adverts.ie</a>, I designed and implemented a RESTful API for
                         the Bullet
                         Accounts product. Another feature I developed was Bank Reconciliation (the process of
-                        confirming the bank balance as shown in one's bank balancing statement and the corresponding amount in an organisation's own accounting records). The feature allows
+                        confirming the bank balance as shown in one's bank balancing statement and the corresponding
+                        amount in an organisation's own accounting records). The feature allows
                         a user to
                         upload a bank statement and the feature applies matching rules to each transaction so that they
                         can be reconciled with the information in Bullet. </p>
 
                     <p>Here's a screenshot taken from Bullet's transaction reconciliation process:</p>
-                    <img class="img-responsive center-block" src="assets/img/rec3.png" alt=""/>
+                    <img class="img-responsive center-block" src="assets/img/bullet_reconciliation.png"
+                         alt="Bank Reconciliation"/>
                 </div>
             </div>
             <div class="tab-pane" id="deathrun">
@@ -227,7 +246,7 @@
                         is an in-game shot:</p>
 
                     <p>
-                        <img class="img-responsive center-block" src="assets/img/in_game.png" alt=""/>
+                        <img class="img-responsive center-block" src="assets/img/deathrun_in_game.png" alt="Death Run"/>
                     </p>
 
                     <p>In the future I hope to work on adding a third player, whose role will be to manually control the
@@ -245,12 +264,12 @@
                     <p>I developed this game for one of the assignments in an Advanted Telecommunications course I took
                         in third
                         year of university. Having done a <a href="http://www.github.com/wbrowne/HTML5-Minesweeper">HTML5
-                            minesweeper game</a> using the canvas a few months previously, I decided to go a bit further
+                            minesweeper game</a> using the HTML5 canvas a few months previously, I decided to go a bit further
                         by
                         integrating with NodeJS</p>
 
                     <p>
-                        <img class="img-responsive center-block" src="assets/img/tic_tac_toe2.png" alt=""/>
+                        <img class="img-responsive center-block" src="assets/img/tic_tac_toe.png" alt="Tic Tac Toe"/>
                     </p>
                 </div>
             </div>
@@ -260,7 +279,8 @@
                         <h2>Embedded Systems programming</h2>
                     </div>
 
-                    <p>During my masters I worked with the LPC2468 microcontroller developing <a href="https://github.com/wbrowne/Embedded-Systems">various small-scale
+                    <p>During my masters I worked with the LPC2468 microcontroller developing <a
+                            href="https://github.com/wbrowne/Embedded-Systems">various small-scale
                         embedded systems</a> making use of peripheral modules and devices such as interrupt controllers,
                         serial
                         communication devices, LCD and touchscreen controllers and analogue-to-digital converters. I
@@ -323,6 +343,5 @@
 <script type="text/javascript" src="assets/js/bootstrap-tabcollapse.js"></script>
 <script type="text/javascript" src="assets/js/hover.zoom.js"></script>
 <script type="text/javascript" src="assets/js/hover.zoom.conf.js"></script>
-
 </body>
 </html>

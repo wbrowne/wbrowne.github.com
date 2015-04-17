@@ -242,3 +242,7 @@ a:after {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.right-align {
+    float: right;
+}
