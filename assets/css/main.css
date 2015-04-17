@@ -432,18 +432,11 @@ a:after {
     }
 }
 
-/**/
+/* PNG sprites */
 .sprites { background: url('../img/sprites.png') no-repeat; }
-.bullet { width: 1279px; height: 1018px; background-position: 0 -1647px; }
-.bullet_reconciliation { width: 908px; height: 1039px; background-position: -1596px 0; }
-.deathrun { width: 640px; height: 480px; background-position: -1281px -1040px; }
-.deathrun_in_game { width: 865px; height: 541px; background-position: 0 0; }
-.health_dashboard { width: 1279px; height: 1018px; background-position: -1280px -1647px; }
-.me { width: 225px; height: 223px; background-position: -1281px -659px; }
-.mtt { width: 550px; height: 550px; background-position: -1922px -1040px; }
-.mtt_logo { width: 220px; height: 220px; background-position: -492px -542px; }
-.nodejs { width: 491px; height: 364px; background-position: 0 -542px; }
-.telemed_arch { width: 1280px; height: 739px; background-position: 0 -907px; }
-.tic_tac_toe { width: 729px; height: 658px; background-position: -866px 0; }
-/*.zoom { width: 60px; height: 60px; background-position: -713px -542px; }*/
-
+.bullet { width: 555px; height: 442px; background-position: -556px -539px; }
+.deathrun { width: 360px; height: 270px; background-position: -551px -268px; }
+.health_dashboard { width: 555px; height: 442px; background-position: 0 -551px; }
+.mtt { width: 550px; height: 550px; background-position: 0 0; }
+.mtt_logo { width: 220px; height: 220px; background-position: -912px 0; }
+.nodejs { width: 360px; height: 267px; background-position: -551px 0; }
