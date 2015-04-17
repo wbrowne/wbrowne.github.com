@@ -9,6 +9,10 @@
 
     <title>Will Browne | Software Developer</title>
 
+    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/hover.zoom.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
@@ -41,7 +45,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 centered">
-                    <img src="assets/img/me.png" alt="me"/>
+                    <img class="img-responsive center-block" src="assets/img/me.png" alt="me"/>
 
                     <h1>Hey there!</h1>
 
@@ -63,34 +67,34 @@
 
         <div class="row mt centered">
             <div class="col-lg-6">
-                <div>
                     <a class="zoom green" href="work.html#mtt">
-                        <div class="img-responsive sprites mtt"></div>
+                        <img class="img-responsive" src="assets/img/mtt.png"
+                                alt="MTT"/>
                     </a>
-                </div>
                 <div>
                     <h4>Software developer @ Mobile Travel Technologies</h4>
 
-                    <p>As part of MTT's product team (and core innovative team - the Zulus), my most important work involved developing the <a href="http://mttnow.com/mtt-concierge">Concierge Live product</a>, a real-time mobile travel assistant that obtains and utilizes relevant information to guide travellers through every step of their journey.
+                    <p>As part of MTT's product team (and core innovative team - the Zulus), my most important work
+                        involved developing the <a href="http://mttnow.com/mtt-concierge">Concierge Live product</a>, a
+                        real-time mobile travel assistant that obtains and utilizes relevant information to guide
+                        travellers through every step of their journey.
                         I also pioneered MTT’s automation deployment strategy through <a href="http://www.ansible.com">Ansible</a>
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-6">
-                <div>
                     <a class="zoom green" href="work.html#movieApp">
-                        <img
-                             class="img-responsive" src="assets/img/movie_app.gif"
-                             alt="FF"/>
+                        <img class="img-responsive" src="assets/img/movie_app.gif"
+                                alt="FF"/>
                     </a>
-                </div>
                 <div>
                     <h4>Co Founder @ TellMeWhatToWatch</h4>
 
                     <p>Ever asked your friends for advice on what movies or tv show you should watch?
                         TellMeWhatToWatch is a mobile app that provides a social platform for friends to recommend
-                        viewing content to each other in real time. It is currently in the early stages of development and is intended for the Android platform
+                        viewing content to each other in real time. It is currently in the early stages of development
+                        and is intended for the Android platform
                     </p>
                 </div>
             </div>
@@ -100,53 +104,54 @@
         <div class="row mt centered">
 
             <div class="col-lg-6">
-                <div>
-                    <a class="zoom green" href="work.html#dissertation">
-                        <div class="img-responsive sprites health_dashboard"></div>
-                    </a>
-                </div>
+                    <a class="zoom green" href="work.html#dissertation"><img
+                            class="img-responsive"
+                            src="assets/img/health_dashboard.png" alt=""/></a>
+
                 <div>
                     <h4>Dissertation - Palliative Care Health Application</h4>
 
-                    <p>I designed and built a Telemedicine cloud application that provides secure access to patient records and enables remote control
-                        over wireless body sensor networks using prototype Bluetooth 4.0&reg; hardware. This project was the
+                    <p>I designed and built a Telemedicine cloud application that provides secure access to patient
+                        records and enables remote control
+                        over wireless body sensor networks using prototype Bluetooth 4.0&reg; hardware. This project was
+                        the
                         focus of my Masters dissertation. I hope to further develop and release this product in the
                         future</p>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div>
-                    <a class="zoom green" href="work.html#bullet">
-                        <div class="img-responsive sprites bullet"></div>
-                    </a>
-                </div>
+                    <a class="zoom green" href="work.html#bullet"><img
+                            class="img-responsive"
+                            src="assets/img/bullet.png" alt=""/></a>
                 <div>
                     <h4>Software developer @ Bullet</h4>
 
-                    <p>Bullet are a small company that provide a range of web applications that aim to help people start and
-                        run small businesses. My role in the company as a full stack Java Software Developer meant developing customer driven features for Bullet's online accounting software. My most important
-                        contribution was developing their RESTful API and enabling the product's Multi Currency capabilities</p>
+                    <p>Bullet are a small company that provide a range of web applications that aim to help people start
+                        and
+                        run small businesses. My role in the company as a full stack Java Software Developer meant
+                        developing customer driven features for Bullet's online accounting software. My most important
+                        contribution was developing their RESTful API and enabling the product's Multi Currency
+                        capabilities</p>
                 </div>
             </div>
-
         </div>
 
         <div class="row mt centered">
             <div class="col-lg-4">
-                <a class="zoom green" href="work.html#deathrun">
-                    <div class="img-responsive sprites deathrun"></div>
-                </a>
+                <a class="zoom green" href="work.html#deathrun"><img class="img-responsive"
+                                                                     src="assets/img/deathrun.png" alt=""/></a>
 
                 <p></p>
+
                 <p>An original co-op game (currently in Alpha stage) written in C++ and OpenGL using the Bullet physics
                     engine. Inspired by the Half Life 2 Mod Zombie Master</p>
             </div>
             <div class="col-lg-4">
-                <a class="zoom green" href="work.html#tictactoe">
-                    <div class="img-responsive sprites nodejs"></div>
-                </a>
+                <a class="zoom green" href="work.html#tictactoe"><img class="img-responsive" src="assets/img/nodejs.png"
+                                                                      alt=""/></a>
 
                 <p></p>
+
                 <p>Multiplayer Tic-tac-toe written in HTML5, Node.js and Socket.IO. All client exchanges are encrypted
                     using a combination of RSA and AES crypto</p>
             </div>
@@ -155,6 +160,7 @@
                                                                      alt=""/></a>
 
                 <p></p>
+
                 <p>Developed multiple Embedded Systems using an LPC2468 microcontroller with a 16-bit/32-bit ARM7TDMI-S
                     CPU</p>
             </div>
@@ -269,8 +275,7 @@
                 </div>
 
                 Ruby on Rails (currently learning)
-                <div class="progress" rel="popover"
-                     data-content="I'm currently building a blog platform in Ruby on Rails 4!">
+                <div class="progress">
                     <div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="20" aria-valuemin="0"
                          aria-valuemax="100" style="width: 20%;">
                         <span class="sr-only">20% Complete</span>
@@ -395,19 +400,5 @@
     </div>
 </div>
 
-<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/hover.zoom.js"></script>
-<script type="text/javascript" src="assets/js/hover.zoom.conf.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('div[rel]').each(function () {
-            $(this).popover({
-                placement: 'top',
-                trigger: 'hover'
-            }).css("cursor", "pointer");
-        });
-    });
-</script>
 </body>
 </html>
