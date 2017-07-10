@@ -28,7 +28,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html">About Me</a></li>
                 <li><a href="index.html#work">Work</a></li>
                 <li><a href="index.html#technologies">Technologies</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
@@ -49,22 +49,46 @@
             <h1>MY WORK</h1>
 
             <p>Here's more detail of some of the work I've done. If you want to know more, just <a
-                    href="mailto:wbrowne.ca@gmail.com?Subject=Hello!">get in touch!</a></p>
+                    href="mailto:wbrowne@tcd.ie?Subject=Hello!">get in touch!</a></p>
         </div>
     </div>
 
     <div id="content">
         <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#mtt" data-toggle="tab">Mobile Travel Technologies</a></li>
+            <li class="active"><a href="#kijiji" data-toggle="tab">Kijiji</a></li>
+            <li><a href="#mtt" data-toggle="tab">Mobile Travel Technologies</a></li>
             <li><a href="#movieApp" data-toggle="tab">TellMeWhatToWatch</a></li>
             <li><a href="#dissertation" data-toggle="tab">Telemedicine Application</a></li>
             <li><a href="#bullet" data-toggle="tab">Bullet</a></li>
             <li><a href="#deathrun" data-toggle="tab">Death Run</a></li>
-            <li><a href="#tictactoe" data-toggle="tab">Tic Tac Toe</a></li>
             <li><a href="#embedded" data-toggle="tab">Embedded Systems</a></li>
         </ul>
         <div id="my-tab-content" class="tab-content">
-            <div class="tab-pane active" id="mtt">
+            <div class="tab-pane active" id="kijiji">
+                <div class="row mt">
+                    <div class="page-header">
+                        <h2>Kijiji (eBay Classifieds)</h2>
+                        <img class="right-align" src="assets/img/kijiji.svg" alt="Kijiji" />
+                    </div>
+
+                    <p><a href="http://www.kijiji.ca">Kijiji</a>, an eBay company, is Canada’s leading classifieds site and the 2nd most reputable web and social media brand in Canada after Google**. On average, half of Canadians visit Kijiji each month. In September 2016, Kijiji received 15.3M visitors, or 50% of the Canadian digital population. These figures give an idea of the kind of scale the website needs to be capable of handling.
+                    </p>
+
+                    <p>Kijiji's tech department consists of several cross functional squads. The squad (known as KIA) I was apart of focussed on development for Kijiji’s commercial revenue streams across all verticals (real estate, autos, jobs, etc.). This included Admarkt, display and text advertising, integations with third partiy vendors (for example Indeed), and any other revenue generating initiatives.</p>
+
+                    <p>The squad was made up of 3 backend developers (including myself), 1 frontend developer, a squad development lead, 1 QA engineer, a product manager and a delivery (project) manager. As part of my role within the team I was responsible for contributing to the design and development of product features and subsystems. After my first year in the company, I was promoted to take on a more senior role where I was entrusted with  owning initiatives from the design stage all the way to production and thereafter. One example of this is Kijiji's automobile 'New Car' feature. </p>
+
+                    <h4>Admarkt</h4>
+                    <p>Admarkt is Kijiji's new cost-per-click advertising platform intended for Business Sellers. It is a completely new way of users operating their business on Kijiji, where instead of paying for features on the fly to boost their business, everything is now based off an ad level budget. Some of my contributions include the initial rollout strategy across Canada, some of the power features (bulk inventory ingestion and expedited account creation) and the integration with our existing user moderation workflows.</p>
+
+                    <p>For more information on the product itself, please see <a href="https://kijijiforbusiness.ca/en/admarkt/">here</a>.</p>
+
+                    <small>**Leger Reputation Study 2016</small>
+                </div>
+
+            </div>
+       
+            <div class="tab-pane" id="mtt">
                 <div class="row mt">
                     <div class="page-header">
                         <h2>Mobile Travel Technologies (MTT)</h2>
@@ -72,7 +96,7 @@
                              alt="MTT logo" >
                     </div>
 
-                    <p>MTT are a software company that specialize in mobile apps, mobile web and mobile technology
+                    <p>MTT are a software company (more recently acquired by Travelport Digital) that specialize in mobile apps, mobile web and mobile technology
                         products for airlines, travel management companies, OTAs and hotels. They have customers such
                         as: EasyJet, Saudia Airlines, Singapore Airlines, BCD, and LATAM.</p>
 
@@ -85,14 +109,12 @@
                         software widget
                         that is embedded within your existing mobile application.</p>
 
-                    <p>As part of a small scrum product team, I assumed role as server side developer for the pilot of the Concierge Live Product.
-                        Being part of MTT's product team meant that the components and services that we built had to be very
-                        robust and maintainable. This meant that code reviews, architecture/design sessions, and pairing played a large role in our development processes.
+                    <p>MTT's product team is responsible for building all the core tooling, components and services that make up MTT's products. These services have to be very robust and extensible, as they are used across different solutions for clients with different needs. This meant that code reviews, architecture/design sessions, and pair programming played a large role in our development processes.
                         My main responsibility for Concierge Live was building, configuring and maintaining Spring Boot web services.
-                        Some of the main technologies used were Groovy, Spring Boot, Cucumber, Thymeleaf and MongoDB.</p>
+                        Some of the main technologies used were Groovy, Spring Boot, RabbitMQ, Cucumber, Thymeleaf and MongoDB.</p>
 
                     <p>For more information on the product itself, please see MTT's press release on the <a
-                            href="http://mttnow.com/mtt-concierge">Concierge
+                            href="http://digital.travelport.com/gamingresorts-mobile">Concierge
                         Live product</a>.</p>
 
                     <div style="font-size: 16px">
@@ -210,7 +232,7 @@
                     <div class="page-header">
                         <h2>Bullet</h2>
                     </div>
-                    <p>With close to a year spent at <a href="http://www.bullethq.com/">Bullet</a>, I
+                    <p>With close to a year spent in total at <a href="http://www.bullethq.com/">Bullet</a>, I
                         worked on many
                         different parts of the Bullet Accounts product. As such a small startup at the time, I worked
                         closely with the CTO and was given a lot of responsibility.</p>
@@ -255,23 +277,6 @@
                         that the game can run on mobile devices.</p>
                 </div>
             </div>
-            <div class="tab-pane" id="tictactoe">
-                <div class="row mt">
-                    <div class="page-header">
-                        <h2>HTML5 Cypto Tic Tac Toe</h2>
-                    </div>
-                    <p>I developed this game for one of the assignments in an Advanted Telecommunications course I took
-                        in third
-                        year of university. Having done a <a href="http://www.github.com/wbrowne/HTML5-Minesweeper">HTML5
-                            minesweeper game</a> using the HTML5 canvas a few months previously, I decided to go a bit further
-                        by
-                        integrating with NodeJS.</p>
-
-                    <p>
-                        <img class="img-responsive center-block" src="assets/img/tic_tac_toe.jpg" alt="Tic Tac Toe"/>
-                    </p>
-                </div>
-            </div>
             <div class="tab-pane" id="embedded">
                 <div class="row mt">
                     <div class="page-header">
@@ -305,7 +310,7 @@
                 <h4>Location</h4>
 
                 <p>
-                    Toronto, Canada.
+                    Dublin, Ireland.
                 </p>
             </div>
 
@@ -314,7 +319,6 @@
 
                 <ul class="list-inline">
                     <li><a href="https://github.com/wbrowne?tab=repositories" class="fa fa-github fa-4x"></a></li>
-                    <li><a href="https://twitter.com/_wbrowne_" class="fa fa-twitter fa-4x"></a></li>
                     <li><a href="http://www.linkedin.com/in/willbrowne" class="fa fa-linkedin fa-4x"></a></li>
                 </ul>
             </div>
