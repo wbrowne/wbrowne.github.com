@@ -7,7 +7,7 @@
             var defaults = {
                 overlay: true,
                 overlayColor: '#2e9dbd',
-                overlayOpacity: 0.9,
+                overlayOpacity: 0.7,
                 zoom: 0,
                 speed: 200
             };
